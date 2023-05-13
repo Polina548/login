@@ -1,121 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="MissingDefaultResource">
+    android:background="@color/c3c3"
+    tools:context=".MainActivity"
+    >
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_440"
+        android:layout_height="@dimen/_274"
+        android:layout_marginTop="@dimen/_0"
         android:src="@drawable/top_background"
-        tools:ignore="ContentDescription,MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
     <TextView
-        android:layout_width="230dp"
-        android:layout_height="144dp"
+        android:layout_width="@dimen/_230"
+        android:layout_height="@dimen/_144"
+        android:layout_marginStart="@dimen/tsize"
+        android:layout_marginTop="@dimen/_60"
         android:text="@string/login_to_your_account"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/_36"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints,SpUsage"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="75dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_60"
         android:src="@drawable/women2"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="250dp"
-        tools:layout_editor_absoluteY="75dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <EditText
+        android:id="@+id/appCompatButton"
         android:layout_width="@dimen/_346"
         android:layout_height="@dimen/_54"
+        android:layout_marginTop="@dimen/_40"
         android:background="@drawable/btn2"
         android:gravity=""
-        android:text="@string/enter_your_email"
+        android:hint="@string/enter_your_email"
         android:textAllCaps="false"
         android:textColor="@color/_717171"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="356dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:layout_width="@dimen/_105"
         android:layout_height="@dimen/corners"
+        android:layout_marginStart="@dimen/_24"
+        android:layout_marginBottom="@dimen/_4"
         android:text="@string/your_email"
         android:textColor="@color/_5325"
         android:textSize="@dimen/textSize"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints,SpUsage"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="326dp" />
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        />
 
     <TextView
         android:layout_width="@dimen/_140"
         android:layout_height="@dimen/corners"
+        android:layout_marginStart="@dimen/_24"
+        android:layout_marginBottom="@dimen/_4"
         android:text="@string/your_password"
         android:textColor="@color/_5325"
         android:textSize="@dimen/textSize"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints,SpUsage"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="449dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="parent"
+         />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <EditText
+        android:id="@+id/editText4"
         android:layout_width="@dimen/_346"
         android:layout_height="@dimen/_54"
+        android:layout_marginTop="@dimen/_44"
         android:background="@drawable/btn2"
         android:gravity=""
-        android:text="@string/enter_your_password"
+        android:hint="@string/enter_your_password"
         android:textAllCaps="false"
         android:textColor="@color/_717171"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="471dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="@dimen/_149"
         android:layout_height="@dimen/tsize"
+        android:layout_marginTop="@dimen/_8"
+        android:layout_marginEnd="@dimen/_24"
         android:text="@string/forget_password"
         android:textColor="@color/_5325"
-        android:textSize="17dp"
+        android:textSize="@dimen/_17"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints,SpUsage"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+         />
 
     <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_60"
+        android:layout_marginBottom="@dimen/_32"
         android:src="@drawable/facebook"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="600dp"
-        tools:ignore="ContentDescription,MissingConstraints" />
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintVertical_bias="1.0"
+         />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_176"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="@dimen/_32"
         android:src="@drawable/google"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="188dp"
-        tools:layout_editor_absoluteY="600dp" />
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintVertical_bias="1.0"
+         />
 
     <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_60"
+        android:layout_marginBottom="@dimen/_32"
         android:src="@drawable/twitter"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="600dp"
-        tools:ignore="ContentDescription,MissingConstraints" />
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintVertical_bias="1.0"
+         />
 
     <androidx.appcompat.widget.AppCompatButton
-
+        android:id="@+id/appCompatButton2"
         android:layout_width="@dimen/_350"
         android:layout_height="@dimen/_60"
+        android:layout_marginBottom="@dimen/_108"
         android:background="@drawable/btn3"
         android:drawableEnd="@drawable/circle"
         android:foregroundGravity="center_horizontal"
@@ -123,18 +163,21 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/tsize"
-        tools:ignore="MissingConstraints,SpUsage"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="690dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/reg"
         android:layout_width="@dimen/_350"
         android:layout_height="@dimen/_60"
+        android:layout_marginBottom="@dimen/_24"
         android:background="@drawable/btn1"
         android:text="@string/don_t_have_an_account_register"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="783dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

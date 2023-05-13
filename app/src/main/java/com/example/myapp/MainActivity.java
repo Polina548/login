@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         Button b1 = (Button)findViewById(R.id.login);
         Button b2 = (Button)findViewById(R.id.signup);
 
-
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
